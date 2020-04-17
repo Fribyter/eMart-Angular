@@ -7,13 +7,17 @@ Please refer to [Wireframe PDF](https://github.com/Fribyter/eMart_angular/blob/m
 
 ## Development server
 
-Run npm start for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files. You should not use ng serve directly, as it does not use the backend proxy configuration by default.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change
+any of the source files.
+You should not use `ng serve` directly, as it does not use the backend proxy configuration by default.
 
 ## Code scaffolding
 
-Run npm run generate -- component <name> to generate a new component. You can also use npm run generate -- directive|pipe|service|class|module.
+Run `npm run generate -- component <name>` to generate a new component. You can also use
+`npm run generate -- directive|pipe|service|class|module`.
 
-If you have installed angular-cli globally with npm install -g @angular/cli, you can also use the command ng generate directly.
+If you have installed [angular-cli](https://github.com/angular/angular-cli) globally with `npm install -g @angular/cli`,
+you can also use the command `ng generate` directly.
 
 ## Build
 
