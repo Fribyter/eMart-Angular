@@ -1,19 +1,13 @@
-<div class="login-container bg-light">
-  <div class="login-box">
-    <h1 translate>APP_NAME</h1>
-    <div>
-      <h6 class="d-inline-block">v{{ version }}</h6>
-      <div class="d-inline-block ml-3">
-        <app-language-selector></app-language-selector>
-      </div>
-    </div>
+<div class="sign-up-container bg-light">
+  <div class="sign-up-box">
+    <h1 translate>Sign up</h1>
     <div class="container">
       <div class="card col-md-6 mt-3 mx-auto">
         <div class="card-body">
           <h4 class="card-title text-center">
             <i class="far fa-3x fa-user-circle text-muted"></i>
           </h4>
-          <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
+          <form novalidate>
             <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
               Username or password incorrect.
             </div>
@@ -24,7 +18,7 @@
                   class="form-control"
                   formControlName="username"
                   autocomplete="username"
-                  [placeholder]="'Username' | translate"
+                  [placeholder]="'Username'"
                 />
                 <span hidden translate>Username</span>
                 <small
@@ -41,7 +35,7 @@
                   class="form-control"
                   formControlName="password"
                   autocomplete="current-password"
-                  [placeholder]="'Password' | translate"
+                  [placeholder]="'Password'"
                   required
                 />
                 <span hidden translate>Password</span>
@@ -56,19 +50,17 @@
             </div>
             <div class="btn-group btn-group-toggle float-right" ngbRadioGroup>
               <label ngbButtonLabel class="btn-outline-primary btn-sm">
-                <input ngbButton type="radio" value="start" />Buyer
+                <input ngbButton type="radio" value="buyer" />Buyer
               </label>
               <label ngbButtonLabel class="btn-outline-primary btn-sm">
-                <input ngbButton type="radio" value="center" />Seller
+                <input ngbButton type="radio" value="seller" />Seller
               </label>
             </div>
-            <button class="btn btn-primary w-100 margin-top" type="submit" [disabled]="loginForm.invalid || isLoading">
-              <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
-              <span translate>Login</span>
+            <button class="btn btn-primary w-100 margin-top" type="submit" [disabled]="loginForm.invalid">
+              <span>Sign up</span>
             </button>
           </form>
         </div>
-        <a class="text-center" href="/sign-up">Sign up</a>
       </div>
     </div>
   </div>
