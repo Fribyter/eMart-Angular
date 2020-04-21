@@ -1,4 +1,19 @@
 {
   "APP_NAME": "eMart",
-  "About": "关于"
+  "About": "关于",
+  "Hello world !": "Hello world !",
+  "Home": "主页",
+  "Logged in as": "Logged in as",
+  "Login": "登录",
+  "Logout": "注销",
+  "Password": "密码",
+  "Password is required": "密码是必填的！",
+  "Username": "用户名",
+  "Username is required": "用户名是必填的！",
+  "Username or password incorrect.": "Username or password incorrect.",
+  "Remember me": "Remember me",
+  "Version": "版本",
+  "Buyer": "卖家",
+  "Seller": "买家",
+  "SignUp": "注册"
 }

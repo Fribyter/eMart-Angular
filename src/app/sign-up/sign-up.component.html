@@ -1,13 +1,13 @@
 <div class="sign-up-container bg-light">
   <div class="sign-up-box">
-    <h1 translate>Sign up</h1>
+    <h1 translate>Sign Up</h1>
     <div class="container">
       <div class="card col-md-6 mt-3 mx-auto">
         <div class="card-body">
           <h4 class="card-title text-center">
             <i class="far fa-3x fa-user-circle text-muted"></i>
           </h4>
-          <form novalidate>
+          <form (ngSubmit)="signUp()" [formGroup]="signUpForm" novalidate>
             <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
               Username or password incorrect.
             </div>
@@ -18,11 +18,11 @@
                   class="form-control"
                   formControlName="username"
                   autocomplete="username"
-                  [placeholder]="'Username'"
+                  [placeholder]="'Username' | translate"
                 />
                 <span hidden translate>Username</span>
                 <small
-                  [hidden]="loginForm.controls.username.valid || loginForm.controls.username.untouched"
+                  [hidden]="signUpForm.controls.username.valid || signUpForm.controls.username.untouched"
                   class="text-danger"
                   translate
                 >
@@ -35,32 +35,52 @@
                   class="form-control"
                   formControlName="password"
                   autocomplete="current-password"
-                  [placeholder]="'Password'"
+                  [placeholder]="'Password' | translate"
                   required
                 />
                 <span hidden translate>Password</span>
                 <small
-                  [hidden]="loginForm.controls.password.valid || loginForm.controls.password.untouched"
+                  [hidden]="signUpForm.controls.password.valid || signUpForm.controls.password.untouched"
                   class="text-danger"
                   translate
                 >
                   Password is required
                 </small>
               </label>
-            </div>
-            <div class="btn-group btn-group-toggle float-right" ngbRadioGroup>
-              <label ngbButtonLabel class="btn-outline-primary btn-sm">
-                <input ngbButton type="radio" value="buyer" />Buyer
+              <label class="d-block">
+                <input
+                  type="password"
+                  class="form-control"
+                  formControlName="confirmPassword"
+                  autocomplete="current-password"
+                  [placeholder]="'Confirm password' | translate"
+                  required
+                />
+                <span hidden translate>Password</span>
+                <small
+                  [hidden]="signUpForm.controls.confirmPassword.valid || signUpForm.controls.confirmPassword.untouched"
+                  class="text-danger"
+                  translate
+                >
+                  Confirm password is required
+                </small>
               </label>
-              <label ngbButtonLabel class="btn-outline-primary btn-sm">
-                <input ngbButton type="radio" value="seller" />Seller
+            </div>
+            <div class="btn-group btn-group-toggle float-right w-100" ngbRadioGroup>
+              <label ngbButtonLabel class="btn-outline-secondary btn-sm">
+                <input ngbButton type="radio" value="start" />Buyer
+              </label>
+              <label ngbButtonLabel class="btn-outline-secondary btn-sm">
+                <input ngbButton type="radio" value="center" />Seller
               </label>
             </div>
-            <button class="btn btn-primary w-100 margin-top" type="submit" [disabled]="loginForm.invalid">
-              <span>Sign up</span>
+            <button class="btn btn-primary w-100 margin-top" type="submit" [disabled]="signUpForm.invalid || isLoading">
+              <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+              <span translate>Sign up</span>
             </button>
           </form>
         </div>
+        <a class="text-center" href="/login">Login</a>
       </div>
     </div>
   </div>
