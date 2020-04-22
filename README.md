@@ -2,8 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-## Front End Wireframes 
+## Front End Wireframes
+
 Please refer to [Wireframe PDF](https://github.com/Fribyter/eMart_angular/blob/master/src/assets/eMart%20Wireframe.pdf)
+
+## Dokcer Image
+
+`docker pull adamlad/emartangular:latest`
 
 ## Development server
 
