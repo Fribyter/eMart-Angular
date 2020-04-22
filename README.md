@@ -6,9 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Please refer to [Wireframe PDF](https://github.com/Fribyter/eMart_angular/blob/master/src/assets/eMart%20Wireframe.pdf)
 
-## Dokcer Image
+## Dokcer
 
-`docker pull adamlad/emartangular:latest`
+Pull the image by running `docker pull adamlad/emartangular:latest`
+Run this image by using command `docker run --rm -d -p 80:80/tcp adamlad/emartangular:latest`
 
 ## Development server
 
