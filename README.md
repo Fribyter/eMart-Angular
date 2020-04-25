@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
+## Live Dmo
+
+https://fribyter.github.io/eMart-angular/
+
 ## Front End Wireframes
 
 Please refer to [Wireframe PDF](https://github.com/Fribyter/eMart_angular/blob/master/src/assets/eMart%20Wireframe.pdf)
