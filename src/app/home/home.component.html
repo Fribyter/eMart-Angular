@@ -1,4 +1,5 @@
 <div class="container">
+  <app-loader [isLoading]="isLoading"></app-loader>
   <div class="row">
     <div class="col-12 col-sm-3">
       <div class="card bg-light mb-3">
@@ -41,7 +42,14 @@
                   <p class="btn btn-danger btn-block">99.00 $</p>
                 </div>
                 <div class="col">
-                  <button type="button" class="btn btn-success btn-block">View</button>
+                  <button
+                    type="button"
+                    class="btn btn-success btn-block"
+                    routerLink="/product-detail"
+                    routerLinkActive="active"
+                  >
+                    View
+                  </button>
                 </div>
               </div>
             </div>

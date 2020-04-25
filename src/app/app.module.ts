@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SignUpModule } from './sign-up/sign-up.module';
 import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
+import { ProductDetailModule } from './product-detail/product-detail.module';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
     AuthModule,
     SignUpModule,
     ShoppingCartModule,
+    ProductDetailModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
