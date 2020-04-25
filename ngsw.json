@@ -1,0 +1,94 @@
+{
+  "configVersion": 1,
+  "timestamp": 1587837290639,
+  "index": "https://Fribyter.github.io/eMart-angular/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://Fribyter.github.io/eMart-angular/favicon.ico",
+        "https://Fribyter.github.io/eMart-angular/index.html",
+        "https://Fribyter.github.io/eMart-angular/main-es2015.11811a5b60cd5467c752.js",
+        "https://Fribyter.github.io/eMart-angular/main-es5.11811a5b60cd5467c752.js",
+        "https://Fribyter.github.io/eMart-angular/manifest.json",
+        "https://Fribyter.github.io/eMart-angular/polyfills-es2015.51f47ac49e5ba27976fd.js",
+        "https://Fribyter.github.io/eMart-angular/polyfills-es5.e9c0cbb3419f482b5a77.js",
+        "https://Fribyter.github.io/eMart-angular/runtime-es2015.1eba213af0b233498d9d.js",
+        "https://Fribyter.github.io/eMart-angular/runtime-es5.1eba213af0b233498d9d.js",
+        "https://Fribyter.github.io/eMart-angular/styles.53ef9360439b2ad02224.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://Fribyter.github.io/eMart-angular/assets/eMart Wireframe.pdf",
+        "https://Fribyter.github.io/eMart-angular/assets/ngx-rocket-logo.png",
+        "https://Fribyter.github.io/eMart-angular/assets/ngx-rocket-logo@192.png",
+        "https://Fribyter.github.io/eMart-angular/fa-brands-400.31015e861aeb30ff8355.woff2",
+        "https://Fribyter.github.io/eMart-angular/fa-brands-400.5818bbd07dfd7095920a.ttf",
+        "https://Fribyter.github.io/eMart-angular/fa-brands-400.607a77859353c0cc1882.eot",
+        "https://Fribyter.github.io/eMart-angular/fa-brands-400.ee26f57bc9e3619b022b.woff",
+        "https://Fribyter.github.io/eMart-angular/fa-regular-400.0747be4cba2f8600544f.eot",
+        "https://Fribyter.github.io/eMart-angular/fa-regular-400.8b892b7904a39e37c53d.woff",
+        "https://Fribyter.github.io/eMart-angular/fa-regular-400.c3146b3524e97475c094.ttf",
+        "https://Fribyter.github.io/eMart-angular/fa-regular-400.c52405129ae48097815d.woff2",
+        "https://Fribyter.github.io/eMart-angular/fa-solid-900.32267f3b4db33a7c85ee.ttf",
+        "https://Fribyter.github.io/eMart-angular/fa-solid-900.7eefe04dc985dd4ad38b.eot",
+        "https://Fribyter.github.io/eMart-angular/fa-solid-900.9451d5fee89b51a20f8a.woff2",
+        "https://Fribyter.github.io/eMart-angular/fa-solid-900.a940d584750708f5435c.woff"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://Fribyter.github.io/eMart-angular/assets/eMart Wireframe.pdf": "1bb23bee6195a7e2ac7a60cd4488488ef6efe880",
+    "https://Fribyter.github.io/eMart-angular/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
+    "https://Fribyter.github.io/eMart-angular/assets/ngx-rocket-logo@192.png": "461b730f9c6dc818f8af9acbe62dfde24dc02d7a",
+    "https://Fribyter.github.io/eMart-angular/fa-brands-400.31015e861aeb30ff8355.woff2": "509988477da79c146cb93fb728405f18e923c2de",
+    "https://Fribyter.github.io/eMart-angular/fa-brands-400.5818bbd07dfd7095920a.ttf": "66c86edfd13e63e0e981ce853335c28bc2d20cec",
+    "https://Fribyter.github.io/eMart-angular/fa-brands-400.607a77859353c0cc1882.eot": "a17db2a5a355befd089bb6e7d53c3d501bf9e827",
+    "https://Fribyter.github.io/eMart-angular/fa-brands-400.ee26f57bc9e3619b022b.woff": "8436788e76679c0485b62c80eb7512c6c2e34e88",
+    "https://Fribyter.github.io/eMart-angular/fa-regular-400.0747be4cba2f8600544f.eot": "6299f0e32575f73d8d897f87ce899827f99e20fe",
+    "https://Fribyter.github.io/eMart-angular/fa-regular-400.8b892b7904a39e37c53d.woff": "8469cb3d9c8189fea64f60aef2753509d770b8df",
+    "https://Fribyter.github.io/eMart-angular/fa-regular-400.c3146b3524e97475c094.ttf": "00f569f7d8ac2497a43b25dc4d3b32213bcea31b",
+    "https://Fribyter.github.io/eMart-angular/fa-regular-400.c52405129ae48097815d.woff2": "260bb01acd44d88dcb7f501a238ab968f86bef9e",
+    "https://Fribyter.github.io/eMart-angular/fa-solid-900.32267f3b4db33a7c85ee.ttf": "ff8f37dfad105796bd924d0db0d37a4ff252618c",
+    "https://Fribyter.github.io/eMart-angular/fa-solid-900.7eefe04dc985dd4ad38b.eot": "5be5944a17e8b32589a12fdc2b8a8570c9081db4",
+    "https://Fribyter.github.io/eMart-angular/fa-solid-900.9451d5fee89b51a20f8a.woff2": "75a88815c47a249eadb5f0edc1675957f860cca7",
+    "https://Fribyter.github.io/eMart-angular/fa-solid-900.a940d584750708f5435c.woff": "15c52209092ce0fb7210e40e2a01acc8b4a5c494",
+    "https://Fribyter.github.io/eMart-angular/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://Fribyter.github.io/eMart-angular/index.html": "e789d57c80fc24a35079483d130986cc58629364",
+    "https://Fribyter.github.io/eMart-angular/main-es2015.11811a5b60cd5467c752.js": "b21fcfb6faab52acae5f1bed6c50f154995c671a",
+    "https://Fribyter.github.io/eMart-angular/main-es5.11811a5b60cd5467c752.js": "d0b72ee9c39fdfef0f123d75f9b5e0795853d7cc",
+    "https://Fribyter.github.io/eMart-angular/manifest.json": "5b4f72838e9756ce1bf7e9070f6892b528efa0c2",
+    "https://Fribyter.github.io/eMart-angular/polyfills-es2015.51f47ac49e5ba27976fd.js": "ec7fbbb21d60ed745a935ee42a55cb3e10ba1aa9",
+    "https://Fribyter.github.io/eMart-angular/polyfills-es5.e9c0cbb3419f482b5a77.js": "abc6b57f586ad14bb0ffd4d9122ef3d14c5100cc",
+    "https://Fribyter.github.io/eMart-angular/runtime-es2015.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://Fribyter.github.io/eMart-angular/runtime-es5.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://Fribyter.github.io/eMart-angular/styles.53ef9360439b2ad02224.css": "79cc689ae4c81c7eec82851a8a8773221a5ca2e9"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
