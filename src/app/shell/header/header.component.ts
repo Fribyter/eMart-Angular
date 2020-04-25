@@ -31,4 +31,9 @@ export class HeaderComponent implements OnInit {
     const credentials = this.credentialsService.credentials;
     return credentials ? credentials.username : null;
   }
+
+  get role(): string | null {
+    const credentials = this.credentialsService.credentials;
+    return credentials ? credentials.role : null;
+  }
 }

@@ -29,6 +29,23 @@
                   Username is required
                 </small>
               </label>
+              <label class="d-block" *ngIf="signUpForm.controls.role.value == 'seller'">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="companyName"
+                  autocomplete="companyName"
+                  [placeholder]="'Company name' | translate"
+                />
+                <span hidden translate>Company name</span>
+                <small
+                  [hidden]="signUpForm.controls.companyName.valid || signUpForm.controls.companyName.untouched"
+                  class="text-danger"
+                  translate
+                >
+                  Company name is required
+                </small>
+              </label>
               <label class="d-block">
                 <input
                   type="password"
@@ -68,10 +85,10 @@
             </div>
             <div class="btn-group btn-group-toggle float-right w-100" ngbRadioGroup>
               <label ngbButtonLabel class="btn-outline-secondary btn-sm">
-                <input ngbButton type="radio" value="start" />Buyer
+                <input ngbButton type="radio" formControlName="role" value="buyer" />Buyer
               </label>
               <label ngbButtonLabel class="btn-outline-secondary btn-sm">
-                <input ngbButton type="radio" value="center" />Seller
+                <input ngbButton type="radio" formControlName="role" value="seller" />Seller
               </label>
             </div>
             <button class="btn btn-primary w-100 margin-top" type="submit" [disabled]="signUpForm.invalid || isLoading">

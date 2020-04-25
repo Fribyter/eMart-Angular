@@ -56,10 +56,10 @@
             </div>
             <div class="btn-group btn-group-toggle float-right" ngbRadioGroup>
               <label ngbButtonLabel class="btn-outline-secondary btn-sm">
-                <input ngbButton type="radio" value="start" /><span translate>Buyer</span>
+                <input ngbButton type="radio" formControlName="role" value="buyer" /><span translate>Buyer</span>
               </label>
               <label ngbButtonLabel class="btn-outline-secondary btn-sm">
-                <input ngbButton type="radio" value="center" /><span translate>Seller</span>
+                <input ngbButton type="radio" formControlName="role" value="seller" /><span translate>Seller</span>
               </label>
             </div>
             <button class="btn btn-primary w-100 margin-top" type="submit" [disabled]="loginForm.invalid || isLoading">
