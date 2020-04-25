@@ -35,7 +35,7 @@ export class SignUpComponent implements OnInit, OnDestroy {
       username: ['', Validators.required],
       password: ['', Validators.required],
       confirmPassword: ['', Validators.required],
-      companyName: ['', Validators.required],
+      companyName: ['', null],
       role: ['', Validators.required],
     });
   }
