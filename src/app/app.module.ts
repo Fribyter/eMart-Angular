@@ -18,6 +18,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { SignUpModule } from './sign-up/sign-up.module';
 import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
 import { ProductDetailModule } from './product-detail/product-detail.module';
+import { SellerInventoryModule } from './seller-inventory/seller-inventory.module';
+import { PurchaseHistoryModule } from './purchase-history/purchase-history.module';
+import { AddItemModule } from './add-item/add-item.module';
 
 @NgModule({
   imports: [
@@ -36,6 +39,9 @@ import { ProductDetailModule } from './product-detail/product-detail.module';
     SignUpModule,
     ShoppingCartModule,
     ProductDetailModule,
+    SellerInventoryModule,
+    PurchaseHistoryModule,
+    AddItemModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
