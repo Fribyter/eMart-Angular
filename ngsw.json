@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1587910463979,
+  "timestamp": 1587910766180,
   "index": "https://fribyter.github.io/eMart-angular/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "https://fribyter.github.io/eMart-angular/favicon.ico",
         "https://fribyter.github.io/eMart-angular/index.html",
-        "https://fribyter.github.io/eMart-angular/main-es2015.3ccc8d66ad0828c62c3a.js",
-        "https://fribyter.github.io/eMart-angular/main-es5.3ccc8d66ad0828c62c3a.js",
+        "https://fribyter.github.io/eMart-angular/main-es2015.edfe2a7d3a49eb2ca19e.js",
+        "https://fribyter.github.io/eMart-angular/main-es5.edfe2a7d3a49eb2ca19e.js",
         "https://fribyter.github.io/eMart-angular/manifest.json",
         "https://fribyter.github.io/eMart-angular/polyfills-es2015.51f47ac49e5ba27976fd.js",
         "https://fribyter.github.io/eMart-angular/polyfills-es5.e9c0cbb3419f482b5a77.js",
@@ -63,9 +63,9 @@
     "https://fribyter.github.io/eMart-angular/fa-solid-900.9451d5fee89b51a20f8a.woff2": "75a88815c47a249eadb5f0edc1675957f860cca7",
     "https://fribyter.github.io/eMart-angular/fa-solid-900.a940d584750708f5435c.woff": "15c52209092ce0fb7210e40e2a01acc8b4a5c494",
     "https://fribyter.github.io/eMart-angular/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://fribyter.github.io/eMart-angular/index.html": "20cbc75b9ffc6fb1be7fd11410c77313f0e7c9ce",
-    "https://fribyter.github.io/eMart-angular/main-es2015.3ccc8d66ad0828c62c3a.js": "91286a8ccc80c557361b1ee46818669c4d4ebd3d",
-    "https://fribyter.github.io/eMart-angular/main-es5.3ccc8d66ad0828c62c3a.js": "80b278c381ac32d32e11bcd8ee2e0937ee8d963a",
+    "https://fribyter.github.io/eMart-angular/index.html": "32f71d892ce227e35dd163c5127aa05c4273e834",
+    "https://fribyter.github.io/eMart-angular/main-es2015.edfe2a7d3a49eb2ca19e.js": "3ed4d61d1c48065792a26803ecd28246be28ef04",
+    "https://fribyter.github.io/eMart-angular/main-es5.edfe2a7d3a49eb2ca19e.js": "1c1a3efbb15354aeb4159f3c5d7f5dea4415a6b6",
     "https://fribyter.github.io/eMart-angular/manifest.json": "5b4f72838e9756ce1bf7e9070f6892b528efa0c2",
     "https://fribyter.github.io/eMart-angular/polyfills-es2015.51f47ac49e5ba27976fd.js": "ec7fbbb21d60ed745a935ee42a55cb3e10ba1aa9",
     "https://fribyter.github.io/eMart-angular/polyfills-es5.e9c0cbb3419f482b5a77.js": "abc6b57f586ad14bb0ffd4d9122ef3d14c5100cc",
