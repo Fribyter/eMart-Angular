@@ -36,7 +36,13 @@
               <span translate>Logged in as {{ role }}:</span> <b>{{ username }}</b>
             </h6>
             <div class="dropdown-divider"></div>
-            <button class="dropdown-item" translate>Purchase history</button>
+            <button class="dropdown-item" translate routerLink="/purchase-history" routerLinkActive="active">
+              Purchase history
+            </button>
+            <button class="dropdown-item" translate routerLink="/add-item" routerLinkActive="active">Add item</button>
+            <button class="dropdown-item" translate routerLink="/seller-inventory" routerLinkActive="active">
+              Seller inventory
+            </button>
             <button class="dropdown-item" translate>View discount</button>
             <button class="dropdown-item" translate>Reports</button>
             <div class="dropdown-divider"></div>

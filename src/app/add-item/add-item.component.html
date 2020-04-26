@@ -1,1 +1,95 @@
-<p>add-item works!</p>
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Add item</h1>
+  </div>
+</section>
+<div class="container">
+  <form (ngSubmit)="save()" [formGroup]="addItemForm" novalidate>
+    <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
+      Username or password incorrect.
+    </div>
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <label for="exampleFormControlSelect1">Category</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Electronic</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="exampleFormControlSelect1">Color</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Black</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row mt-3">
+        <div class="col">
+          <label for="itemName">Item name</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="itemName"
+            autocomplete="itemName"
+            [placeholder]="'Item name' | translate"
+          />
+          <span hidden translate>Username</span>
+          <small
+            [hidden]="addItemForm.controls.itemName.valid || addItemForm.controls.itemName.untouched"
+            class="text-danger"
+            translate
+          >
+            Item name is required
+          </small>
+        </div>
+        <div class="col">
+          <label for="price">Price</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="price"
+            autocomplete="price"
+            [placeholder]="'Price' | translate"
+          />
+          <span hidden translate>Username</span>
+          <small
+            [hidden]="addItemForm.controls.price.valid || addItemForm.controls.price.untouched"
+            class="text-danger"
+            translate
+          >
+            Price is required
+          </small>
+        </div>
+      </div>
+      <div class="form-row mt-3">
+        <div class="col">
+          <label for="stock">No. of stock items</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="stock"
+            autocomplete="stock"
+            [placeholder]="'Stock' | translate"
+          />
+          <span hidden translate>Username</span>
+          <small
+            [hidden]="addItemForm.controls.stock.valid || addItemForm.controls.stock.untouched"
+            class="text-danger"
+            translate
+          >
+            Stock is required
+          </small>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <button class="btn btn-primary w-100 margin-top" type="submit" [disabled]="addItemForm.invalid || isLoading">
+      <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+      <span translate>Save & Sell item</span>
+    </button>
+  </form>
+</div>
