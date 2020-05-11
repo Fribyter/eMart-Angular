@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 https://fribyter.github.io/eMart-angular/
 
+## Backend microservices written in Java with springboot:
+
+Backend repo can be found from here: [eMart backend](https://github.com/Fribyter/eMart-backend)
+
 ## Front End Wireframes
 
 Please refer to [Wireframe PDF](https://github.com/Fribyter/eMart_angular/blob/master/src/assets/eMart%20Wireframe.pdf)
