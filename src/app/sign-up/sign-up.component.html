@@ -9,7 +9,7 @@
           </h4>
           <form (ngSubmit)="signUp()" [formGroup]="signUpForm" novalidate>
             <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
-              Username or password incorrect.
+              Sign up failed.
             </div>
             <div class="form-group">
               <label class="d-block">
@@ -85,10 +85,10 @@
             </div>
             <div class="btn-group btn-group-toggle float-right w-100" ngbRadioGroup>
               <label ngbButtonLabel class="btn-outline-secondary btn-sm">
-                <input ngbButton type="radio" formControlName="role" value="buyer" />Buyer
+                <input ngbButton type="radio" formControlName="role" value="0" />Buyer
               </label>
               <label ngbButtonLabel class="btn-outline-secondary btn-sm">
-                <input ngbButton type="radio" formControlName="role" value="seller" />Seller
+                <input ngbButton type="radio" formControlName="role" value="1" />Seller
               </label>
             </div>
             <button class="btn btn-primary w-100 margin-top" type="submit" [disabled]="signUpForm.invalid || isLoading">
