@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 
 import { QuoteService } from './quote.service';
+import { CredentialsService } from '@app/auth';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { untilDestroyed } from '@app/@core';
 
 @Component({
   selector: 'app-home',
@@ -11,20 +14,42 @@ import { QuoteService } from './quote.service';
 export class HomeComponent implements OnInit {
   quote: string | undefined;
   isLoading = false;
+  error: string | undefined;
+  results: Array<string> = [];
 
-  constructor(private quoteService: QuoteService) {}
+  constructor(
+    private quoteService: QuoteService,
+    private credentialsService: CredentialsService,
+    private httpClient: HttpClient
+  ) {}
 
-  ngOnInit() {
+  seach() {
     this.isLoading = true;
-    this.quoteService
-      .getRandomQuote({ category: 'dev' })
+    var header = {
+      headers: new HttpHeaders().set('Authorization', `Bearer ${this.credentialsService.credentials.token}`),
+    };
+
+    this.httpClient
+      .get('/buyer/item/findAll', header)
       .pipe(
         finalize(() => {
           this.isLoading = false;
         })
       )
-      .subscribe((quote: string) => {
-        this.quote = quote;
-      });
+      .subscribe(
+        (res) => {
+          this.results = [];
+          for (let key in res) {
+            this.results.push(res[key]);
+          }
+        },
+        (error) => {
+          this.error = error;
+        }
+      );
+  }
+
+  ngOnInit() {
+    this.seach();
   }
 }

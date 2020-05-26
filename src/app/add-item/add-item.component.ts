@@ -3,6 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { finalize } from 'rxjs/operators';
 
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { CredentialsService } from '@app/auth';
 import { environment } from '@env/environment';
 import { Logger, untilDestroyed } from '@core';
 
@@ -16,11 +18,49 @@ export class AddItemComponent implements OnInit {
   error: string | undefined;
   addItemForm!: FormGroup;
   isLoading = false;
-  constructor(private router: Router, private route: ActivatedRoute, private formBuilder: FormBuilder) {
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private credentialsService: CredentialsService,
+    private formBuilder: FormBuilder,
+    private httpClient: HttpClient
+  ) {
     this.createForm();
   }
   save() {
     this.isLoading = true;
+
+    var header = {
+      headers: new HttpHeaders().set('Authorization', `Bearer ${this.credentialsService.credentials.token}`),
+    };
+
+    this.httpClient
+      .post(
+        '/seller/item/save',
+        {
+          price: this.addItemForm.value.price,
+          stock: this.addItemForm.value.stock,
+          name: this.addItemForm.value.itemName,
+          categoryId: 1,
+          userId: 2,
+          description: 'test API',
+        },
+        header
+      )
+      .pipe(
+        finalize(() => {
+          this.addItemForm.markAsPristine();
+          this.isLoading = false;
+        })
+      )
+      .subscribe(
+        (res) => {
+          this.router.navigate([this.route.snapshot.queryParams.redirect || '/home'], { replaceUrl: true });
+        },
+        (error) => {
+          this.error = error;
+        }
+      );
   }
 
   ngOnInit(): void {}

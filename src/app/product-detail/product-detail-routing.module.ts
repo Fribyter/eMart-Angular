@@ -7,7 +7,7 @@ import { ProductDetailComponent } from './product-detail.component';
 
 const routes: Routes = [
   Shell.childRoutes([
-    { path: 'product-detail', component: ProductDetailComponent, data: { title: extract('Product detail') } },
+    { path: 'product-detail/:id', component: ProductDetailComponent, data: { title: extract('Product detail') } },
   ]),
 ];
 

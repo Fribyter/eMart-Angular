@@ -15,7 +15,8 @@
     <div class="col-12 col-lg-6 add-to-cart-block">
       <div class="card bg-light mb-3">
         <div class="card-body">
-          <p class="price">99.00 $</p>
+          <p class="title">{{ result['name'] }}</p>
+          <p class="price">{{ result['price'] }} $</p>
           <form method="get" action="cart.html">
             <div class="form-group">
               <label for="colors">Color</label>
@@ -73,9 +74,7 @@
         </div>
         <div class="card-body">
           <p class="card-text">
-            Adjustable synthetic leather strap for a comfortable, customized fit . Rubberized texture for increased
-            toughness & enhanced durability. Charged Cushioning midsole absorbs impact & converts it into responsive
-            quickness. Michelin Wild Gripper outsole compound uses unique traction lugs for unmatched grip & traction.
+            {{ result['description'] }}
           </p>
         </div>
       </div>
