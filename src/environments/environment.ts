@@ -14,7 +14,7 @@ export const environment = {
   production: false,
   hmr: true,
   version: env.npm_package_version + '-dev',
-  serverUrl: 'http://107.182.20.9:8093',
+  serverUrl: 'http://backend.adam-emart.ml:8093',
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US', 'zh-CN'],
 };
