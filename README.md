@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Live Demo
 
-https://fribyter.github.io/eMart-angular/
+http://adam-fsd-emart.ml/
 
 ## Backend microservices written in Java with springboot:
 
