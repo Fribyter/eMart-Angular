@@ -5,6 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Live Demo
 
 http://adam-fsd-emart.ml/
+username: seller1
+password: 123
 
 ## Backend microservices written in Java with springboot:
 
